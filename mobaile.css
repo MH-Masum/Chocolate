@@ -1,0 +1,41 @@
+
+
+/* hero start */
+
+/* .hamburger {
+    display: block;
+} */
+
+/* #hero .cta {
+    text-align: center;
+} */
+.navbar .nav {
+    display: none;
+}
+.iphone {
+    display: none;
+}
+.hamburger {
+    cursor: pointer;
+    position: absolute;
+    top: 30px;
+    right: 50px !important;
+} 
+
+/* hero end */
+
+.nose h2 {
+    font-size: 2rem;
+}
+
+.cta .iphone {
+    display: none;
+}
+
+.p-icon {
+    text-align: center;
+}
+.fa-icon {
+    text-align: center;
+}
+

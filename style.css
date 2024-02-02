@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+
+/* load local font  */ 
+@font-face {
+    font-family:'HelveticaNeue-Thin';
+    src: local('HelveticaNeue-Thin.otf'), url('HelveticaNeue-Thin.otf') format('opentype');
+}
+
+/* Helper classes */
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* background-color: aqua; */
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+    font-size:3rem ;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+#hero {
+    background-image: linear-gradient(rgba(178, 54, 46, 0.6),
+     rgba(214, 84, 82, 0.6)), url('img/hero-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 110vh;
+    overflow: hidden;
+}
+
+#hero .menu {
+    display: grid;
+    grid-template-columns: 6fr 8fr;
+    background-color: #5050559e;
+    text-align:center;
+    padding: 1.2rem 0;
+    margin:0 0 2rem 0;
+}
+
+#hero h2, #hero p{
+    color: #fff;
+    margin-bottom: 1rem;
+    /* font-size: 1.9rem; */
+}
+#hero a {
+    color: #fff;
+    text-decoration: none;
+}
+.cta-anchor {
+    background-color: black;
+    padding: .5rem .4rem;
+    border-radius: 999px;
+    width: 280px;
+}
+.nav li {
+    margin: 0 1px;
+}
+
+.nav li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 15px;
+    display: inline-block;
+}
+.menu {
+    position: fixed;
+    top:0;
+    width: 100%;
+}
+
+        /* MEnu icon hamburger  */
+.hamburger {
+    cursor: pointer;
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    display: none !important;
+    position: fixed;
+    z-index: 999;
+} 
+.hamburger .bar1{
+    background-color: #fff;
+    width: 36px;
+    height: 4px;
+    margin: 3px;
+    border-radius: 10px;
+}
+.hamburger .bar2 {
+    background-color: #fff;
+    width: 36px;
+    height: 4px;
+    margin: 3px;
+    border-radius: 10px;
+}.hamburger .bar3 {
+    background-color: #fff;
+    width: 36px;
+    height: 4px;
+    margin: 3px;
+    border-radius: 10px;
+}
+    /* Keyframe animation for menu start */
+.animateBar1 {
+    animation: flipBar1 .5s;
+    animation-fill-mode: forwards;
+}
+.animateBar2 {
+    animation: fadeBar2 .5s;
+    animation-fill-mode: forwards;
+}
+.animateBar3 {
+    animation: flipBar3 .5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes flipBar1 {
+    from {
+         transform:rotate(0)
+    }
+    to {
+         transform: rotate(45deg) translate(4px, 5px);
+    }
+}
+@keyframes fadeBar2 {
+    from {
+         transform:scale(1)
+    }
+    to {
+         transform: scale(0);
+    }
+}
+@keyframes flipBar3 {
+    from {
+         transform:rotate(0)
+    }
+    to {
+         transform: rotate(-45deg) translate(4px, -5px)
+    }
+}
+                /* Mobaile Nav start */
+.mobaile_nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0000008d;
+    flex-direction: column;
+    padding:16px 0;
+    width: 160px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: -160px;
+    transition: transform 0.5s;
+}
+.openDrawer {
+    transform: translateX(-160px);
+ } 
+.mobaile_nav li {
+    margin: 10px 1px;
+    list-style: none;
+}
+    
+.mobaile_nav li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 15px;
+    display: inline-block;
+}
+                
+                
+                /* Mobaile Nav end */
+
+    /* Keyframe animetion for menu end  */
+
+
+
+      /* cta area  */
+#hero #cta {
+    display: grid;
+    grid-template-columns: 7fr 6fr;
+    margin-top: 9rem;
+}
+.cta .iphone {
+    width: 200px !important;
+}
+.cta h2 {
+    font-size: 2.5rem;
+}
+.cta p {
+    color: #fff;
+    width: 70%;
+    letter-spacing: 1.2px;
+    line-height: 25px;
+    font-size: 1.5rem;
+    /* word-spacing: 10px; */
+}
+.cta a {
+    border-radius: 999px;
+}
+.phone img {
+    width: 400px;
+}
+.section-3 a {
+    color: #000;
+    text-decoration: none;
+}
+
+
+              /* nose start */
+.nose {
+    background-image: url('img/nose-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /*Parralax effect*/
+    height: 600px;
+}
+
+.nose a {
+    color: red;
+    text-decoration: none;
+}
+.nose h2 {
+    color: #fff;
+    font-size: 3rem;
+    margin-top: 3rem;
+}
+.nose p {
+    margin-top: 3rem;
+}
+
+.nose-anchor {
+    background-color: #fff;
+    padding: .5rem .9rem;
+    width: 105px;
+    border-radius: 999px;
+    margin-top: 3rem;
+}
+/* Footer */
+.footer-main {
+    background-color: #2e2e38;
+    color: #fff;
+    padding: 5rem 0;
+}
+.footer-main .posts {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.footer-main .posts .posts-content {
+    margin-left: 10px;
+}
+
+.footer-main .posts .posts-content p {
+    font-size: .7rem;
+}
+
+.fa-icon1 {
+    color: #0000ff;
+    font-size:1.5rem;
+    margin-left: 1rem;
+}
+ 
+.fa-icon2 {
+    color: orchid;
+    font-size:1.5rem;
+    margin-left: 1rem;
+}
+
+.fa-icon3 {
+    color: #000;
+    font-size:1.5rem;
+    margin-left: 1rem;
+}
+.p-icon {
+    text-align: end;
+}
+.fa-icon {
+    text-align:center;
+}
+
+
+
+
+@media screen and (max-width: 528px) {
+    .hamburger {
+        display: block !important;
+    }
+     .app-features h2 {
+        font-size: 30px;
+     }
+}
+
+
+@media screen and (max-width: 991px) {
+    .p-icon {
+        text-align: center;
+    }
+    .fa-icon {
+        text-align: center;
+    }
+
+    .hamburger {
+        display: block !important;
+    }
+    .navbar .nav {
+        display: none;
+    }
+     
+    #hero #cta {
+        display: grid;
+        grid-template-columns:1fr;
+        padding-left: 7rem;
+    }
+    .iphone {
+        display: none;
+    }
+    .nose h2 {
+        font-size: 2rem;
+        margin-top: 6rem;
+    }
+    .app-features h2 {
+        font-size: 1.8rem;
+    }
+}
